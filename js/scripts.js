@@ -34,7 +34,22 @@ $(document).ready(function() {
     });
 
     replaceSort.forEach(function(replaceSor) {
-      $("ul#listOutput").append('<li>' + replaceSor + '</li>');
-    });
+      if (replaceSor === "I'm Sorry, Dave.  I can't do that.") {
+        $("ul#listOutput").append('<li>' + replaceSor + '</li>' + '<img src="img/hal9000.jpg" class= "talksm" alt="Picture of Hal-9000">');
+      } else if (replaceSor === "Boop!" || replaceSor === "Beep!") {
+        $("ul#listOutput").append('<li>' + replaceSor + '</li>' + '<img src="img/r2d2.jpg" class= "talksm" alt="Picture of Hal-9000">');
+        } else {
+          $("ul#listOutput").append('<li>' + replaceSor + '</li>');
+        }
+      });
+
+
+    //   $("ul#listOutput").append('<li>' + replaceSor + '</li>');
+    // });
+
+
+    // replaceSort.forEach(function(replaceSor) {
+    //   $("ul#listOutput").append('<li>' + replaceSor + '</li>');
+    // });
   });
 });

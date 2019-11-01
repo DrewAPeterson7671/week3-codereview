@@ -1,5 +1,6 @@
 #listOutput li {
   list-style-type: none;
+  font-size: 25px;
 }
 
 h1 {
@@ -10,12 +11,16 @@ h1 {
 .headerimg {
   float: right;
   max-width: 200px;
-  margin: 24px;
+  margin: 30px;
+  position: relative;
+  top: -30px;
 }
 
 .headerimg2 {
   float: left;
   max-width: 200px;
+  position: relative;
+  top: -30px;
 }
 
 .mybox {
@@ -35,4 +40,16 @@ h1 {
 
 .jumbotron {
   min-height: 300px;
+}
+
+
+.talksm {
+  float: right;
+  max-width: 30px;
+  margin: 1px;
+  border: 1px;
+  padding: 1px;
+  background-color: black;
+  position: relative;
+  top: -30px;
 }

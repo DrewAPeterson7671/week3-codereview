@@ -1,3 +1,12 @@
 #listOutput li {
   list-style-type: none;
 }
+
+h1 {
+  float: left;
+}
+
+img {
+  float: right;
+  max-width: 200px;
+}

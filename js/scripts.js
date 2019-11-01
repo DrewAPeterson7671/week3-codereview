@@ -20,19 +20,18 @@ $(document).ready(function() {
     var replaceSort = makeStrings.map(function(makeString) {
       if (makeString.includes("3")) {
         return "I'm Sorry, Dave.  I can't do that.";
-        $("ul#listOutput").append('<li>' + replaceSort.join(" ") + '<li>');
       } else if (makeString.includes("2")) {
         return "Boop!";
-        $("ul#listOutput").append('<li>' + replaceSort.join(" ") + '<li>');
       } else if (makeString.includes("1")) {
         return "Beep!";
-        $("ul#listOutput").append('<li>' + replaceSort.join(" ") + '<li>');
       } else {
         return makeString;
       }
     });
 
-
+    replaceSort.forEach(function(replaceSor) {
+      $("ul#listOutput").append('<li>' + replaceSor + '</li>');
+    });
 
 
 
@@ -40,6 +39,8 @@ $(document).ready(function() {
 
       // $("#backendOutput").text(numbers);
       // $("#backend2Output").text(replaceSort.join(" "));
+
+
       // $("ul#listOutput").append('<li>' + replaceSort.join(" ") + '<li>');
 
 

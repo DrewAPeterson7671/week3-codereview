@@ -8,6 +8,19 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+## Behavior Driven Development Objectives
+
+
+| Specified Behavior | Input Example | Output Example |
+| - | - | - |
+| Takes user input number and returns range from 0 to the user input number | 5 | 0, 1, 2, 3, 4, 5 |
+| Replace numbers with a "1" with "Beep!"| 10 | 0, "Beep!", 2, 3, (...), 9, "Beep!" |
+| Replace numbers with a "2" with "Boop!", | 2 | 0, "Beep!", "Boop!|
+| replace numbers containing a "3" with the phrase "I'm sorry, Dave.  I'm afraid I can't do that." | 3 | 0, "Beep!", "Boop!", "I'm Sorry.."|
+| The priority shall be: "3" replacement, "2" replacement and "1" replacement. | 13 | 0, "Beep!", "Boop!", "I'm Sorry..", 4 (...), "Beep!", "Boop!", "I'm sorry.." |
+
+_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+
 ## Github Link
 {[Github link to project](https://drewapeterson7671.github.io/week-1-code-review/index.html)}
 

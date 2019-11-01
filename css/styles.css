@@ -3,10 +3,32 @@
 }
 
 h1 {
-  float: left;
+  /* float: inherit; */
+  text-align: center;
 }
 
-img {
+.headerimg {
   float: right;
   max-width: 200px;
+  margin: 24px;
+}
+
+.headerimg2 {
+  float: left;
+  max-width: : : 200px;
+}
+
+.mybox {
+  margin: 12px;
+  border: 2px;
+  padding: 4px;
+  background-color: black;
+}
+
+.hiddenStuff {
+  text-align: center;
+  display: none;
+  background-color: lightgreen;
+  color: blue;
+  font-size: 50px;
 }

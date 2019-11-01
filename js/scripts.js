@@ -3,6 +3,10 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = $("input#userNumber").val();
 
+    $(".hiddenStuff").hide();
+    $(".hiddenStuff").slideDown();
+
+
     var numbers = countDown(userNumber);
 
     function countDown(inputNumber) {
@@ -32,18 +36,5 @@ $(document).ready(function() {
     replaceSort.forEach(function(replaceSor) {
       $("ul#listOutput").append('<li>' + replaceSor + '</li>');
     });
-
-
-
-
-
-      // $("#backendOutput").text(numbers);
-      // $("#backend2Output").text(replaceSort.join(" "));
-
-
-      // $("ul#listOutput").append('<li>' + replaceSort.join(" ") + '<li>');
-
-
-
   });
 });

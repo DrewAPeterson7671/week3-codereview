@@ -2,26 +2,30 @@ $(document).ready(function() {
   $("form").submit(function(event){
     event.preventDefault();
     var userNumber = $("input#userNumber").val();
-    countDown(userNumber);
-    $("#backendOutput").text();
+    // countDown(userNumber);
+    $("#backendOutput").text(countDown(userNumber));
 
 
 
 
 
-    var numberStorage = [];
 
-    function countDown (inputNumber) {
-      for (var i = inputNumber; i < 0; i -= 1) {
-        console.log(inputNumber);
+
+
+
+
+    function countDown(inputNumber) {
+      var numberStorage = [];
+      for (var i = inputNumber; i > -1; i -= 1) {
+
         numberStorage.push(inputNumber - i);
-        return numberStorage;
       }
-      console.log(numberStorage);
+      return numberStorage;
+
     }
 
 
-
+      // console.log(countDown(userNumber));
 
 
 

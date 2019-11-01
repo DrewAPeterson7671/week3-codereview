@@ -22,16 +22,30 @@ $(document).ready(function() {
       return num;
     }
 
-    var replaceSort = numbers.map(function(number) {
-      console.log(number);
-      if (number = 3) {
+    var makeStrings = numbers.map(function(number) {
+      return number.toString();
+    });
+
+    var replaceArrays = [];
+
+    for (var i = 0; i < makeStrings.length; i+= 1) {
+      if (makeStrings[i] === "3") {
+        replaceArrays.push("I'm Sorry, Dave.  I can't do that.");
+      } else {
+        replaceArrays.push(makeStrings[i]);
+      }
+    }
+
+
+    var replaceSort = makeStrings.map(function(makeString) {
+      if (makeString === "3") {
         return "I'm Sorry, Dave.  I can't do that.";
-      } else if (number = 2) {
-          return "Boop!";
-        } else if  (number = 1) {
-          return "Beep!";
-        }
-      });
+      } else if (makestring != "3") {
+        return makeString;
+      } else {
+        return "problem"
+      }
+    });
 
       // var preProcess = countDown(userNumber);
       // var textProcess = replaceSort(preProcess);
@@ -48,7 +62,7 @@ $(document).ready(function() {
 
 
       $("#backendOutput").text(numbers);
-      $("#backend2Output").text(replaceSort);
+      $("#backend2Output").text(replaceArrays);
 
 
 

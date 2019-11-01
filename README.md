@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Beep! Boop!_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This application changes an input number into a range and replaces specific parts with text. (Current Version 11//01/2019)_
 
-#### By _**{List of contributors}**_
+#### By _**Drew Peterson**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_The user will input a number.  The application will output a range from zero to that number, substituting an numbers that contain a "3" with "I'm Sorry, Dave. I can't do that.", any numbers with a "2 with "Boop!", and any numbers with a "1" with "Beep!".  In any resulting conflicts, the higher number rule will prevail (such as "123" will resolve as ("I'm sorry, Dave...)_
 
 ## Behavior Driven Development Objectives
 
@@ -19,24 +19,20 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | replace numbers containing a "3" with the phrase "I'm sorry, Dave.  I'm afraid I can't do that." | 3 | 0, "Beep!", "Boop!", "I'm Sorry.."|
 | The priority shall be: "3" replacement, "2" replacement and "1" replacement. | 13 | 0, "Beep!", "Boop!", "I'm Sorry..", 4 (...), "Beep!", "Boop!", "I'm sorry.." |
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
-
 ## Github Link
-{[Github link to project](https://drewapeterson7671.github.io/week-1-code-review/index.html)}
+{[Github link to project](http://drewapeterson7671.github.io/week3-codereview/index.html)}
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Download the directory as structured._
+* _Open index.html in a browser_
+* _Best viewed in Google Chrome browser_
+* _Other browsers currently untested_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no bugs currently known._
 
 ## Support and contact details
 
@@ -44,12 +40,12 @@ _Please contact me directly via email at drew.a.peterson@hotmail.com with any bu
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out MIT or GPL.}_
+_Technologies used are HTML 5, CSS, Javascript, jQuery, and Bootstrap.  This was constructed using Atom._
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT*
 
 
 
-Copyright (c) 2019 **_{List of contributors or company name}_**
+Copyright (c) 2019 **_Drew Peterson_**

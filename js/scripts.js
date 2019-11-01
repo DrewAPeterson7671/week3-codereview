@@ -6,7 +6,6 @@ $(document).ready(function() {
     $(".hiddenStuff").hide();
     $(".hiddenStuff").slideDown();
 
-
     var numbers = countDown(userNumber);
 
     function countDown(inputNumber) {
@@ -42,14 +41,5 @@ $(document).ready(function() {
           $("ul#listOutput").append('<li>' + replaceSor + '</li>');
         }
       });
-
-
-    //   $("ul#listOutput").append('<li>' + replaceSor + '</li>');
-    // });
-
-
-    // replaceSort.forEach(function(replaceSor) {
-    //   $("ul#listOutput").append('<li>' + replaceSor + '</li>');
-    // });
   });
 });

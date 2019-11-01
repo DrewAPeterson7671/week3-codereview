@@ -26,24 +26,26 @@ $(document).ready(function() {
       return number.toString();
     });
 
-    var replaceArrays = [];
-
-    for (var i = 0; i < makeStrings.length; i+= 1) {
-      if (makeStrings[i] === "3") {
-        replaceArrays.push("I'm Sorry, Dave.  I can't do that.");
-      } else {
-        replaceArrays.push(makeStrings[i]);
-      }
-    }
+    // var replaceArrays = [];
+//
+    // for (var i = 0; i < makeStrings.length; i+= 1) {
+    //   if (makeStrings[i] === "3") {
+    //     replaceArrays.push("I'm Sorry, Dave.  I can't do that.");
+    //   } else {
+    //     replaceArrays.push(makeStrings[i]);
+    //   }
+    // }
 
 
     var replaceSort = makeStrings.map(function(makeString) {
       if (makeString === "3") {
         return "I'm Sorry, Dave.  I can't do that.";
-      } else if (makestring != "3") {
-        return makeString;
+      } else if (makeString === "2") {
+        return "Boop!";
+      } else if (makeString === "1") {
+        return "Beep!";
       } else {
-        return "problem"
+        return makeString;
       }
     });
 
@@ -62,7 +64,7 @@ $(document).ready(function() {
 
 
       $("#backendOutput").text(numbers);
-      $("#backend2Output").text(replaceArrays);
+      $("#backend2Output").text(replaceSort);
 
 
 

@@ -3,7 +3,7 @@
 }
 
 h1 {
-  /* float: inherit; */
+  float: inherit;
   text-align: center;
 }
 
@@ -15,14 +15,14 @@ h1 {
 
 .headerimg2 {
   float: left;
-  max-width: : : 200px;
+  max-width: 200px;
 }
 
 .mybox {
   margin: 12px;
   border: 2px;
   padding: 4px;
-  background-color: black;
+  background-color: lightgreen;
 }
 
 .hiddenStuff {
@@ -31,4 +31,8 @@ h1 {
   background-color: lightgreen;
   color: blue;
   font-size: 50px;
+}
+
+.jumbotron {
+  min-height: 300px;
 }

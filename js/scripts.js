@@ -39,6 +39,7 @@ $(document).ready(function() {
     $("ul#listOutput").empty();
 
     var userNumber = $("input#userNumber").val();
+    $("input#userNumber").val("");
 
     $(".hiddenStuff").hide();
     $(".hiddenStuff").slideDown();

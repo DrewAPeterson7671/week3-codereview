@@ -1,36 +1,51 @@
+//Business Logic
+
+function countDown(inputNumber) {
+  var num = [];
+  for (var i = inputNumber; i > -1; i -= 1) {
+    num.push(inputNumber - i);
+  }
+  return num;
+}
+
+function makingStrings(numbers) {
+  var makeToStrings = numbers.map(function(number) {
+    return number.toString();
+  });
+  return makeToStrings;
+}
+
+function subOut(makeStrings) {
+  var replaceSort = makeStrings.map(function(makeString) {
+    if (makeString.includes("3")) {
+      return "I'm Sorry, Dave.  I can't do that.";
+    } else if (makeString.includes("2")) {
+      return "Boop!";
+    } else if (makeString.includes("1")) {
+      return "Beep!";
+    } else {
+      return makeString;
+    }
+  });
+  return replaceSort;
+}
+
+// Frontend logic
+
 $(document).ready(function() {
   $("form").submit(function(event){
     event.preventDefault();
+
+    $("ul#listOutput").empty();
+
     var userNumber = $("input#userNumber").val();
 
     $(".hiddenStuff").hide();
     $(".hiddenStuff").slideDown();
 
     var numbers = countDown(userNumber);
-
-    function countDown(inputNumber) {
-      var num = [];
-      for (var i = inputNumber; i > -1; i -= 1) {
-        num.push(inputNumber - i);
-      }
-      return num;
-    }
-
-    var makeStrings = numbers.map(function(number) {
-      return number.toString();
-    });
-
-    var replaceSort = makeStrings.map(function(makeString) {
-      if (makeString.includes("3")) {
-        return "I'm Sorry, Dave.  I can't do that.";
-      } else if (makeString.includes("2")) {
-        return "Boop!";
-      } else if (makeString.includes("1")) {
-        return "Beep!";
-      } else {
-        return makeString;
-      }
-    });
+    var makeStrings = makingStrings(numbers);
+    var replaceSort = subOut(makeStrings)
 
     replaceSort.forEach(function(replaceSor) {
       if (replaceSor === "I'm Sorry, Dave.  I can't do that.") {
